@@ -1,20 +1,17 @@
 # For Job Application Review Purpose
-# Bioinformatics analysis code
 
-Working analysis code from microbial and host-transcriptome projects. Each folder is one analysis: a shell script for the sequencing pipeline, and an R script for statistics and figures where the project has a downstream step.
-
-The scripts are research working copies. Paths point to a lab cluster, and raw sequencing data are not included. They show the tools, parameters, and analysis choices used on real datasets.
+Majority of the scripts are research working copies. They show the tools, parameters, and analysis choices used on real datasets.
 
 ## Contents
 
-| Folder | Data | What the code does |
+| Folder | Analysis Workflow | Related Publication |
 | --- | --- | --- |
-| [`16S-project`](16S-project) | Illumina 16S amplicon | QIIME 2 processing, then diversity and taxonomy in R |
-| [`nanopore-project`](nanopore-project) | Nanopore full-length 16S | Basecalling through taxonomy, then community analysis in R |
-| [`16S-database`](16S-database) | 16S feature sequences | Two-step taxonomy: custom database, then RDP for the rest |
-| [`metagenomic`](metagenomic) | Shotgun metagenome | QC, host removal, assembly, genes, and binning |
-| [`RNA-seq`](RNA-seq) | Chicken RNA-seq | Alignment and counts, then differential expression in R |
-| [`pythonNotes`](pythonNotes) | Practice notebook | Python, pandas, and scikit-learn notes from coursework |
+| [`16S-project`](16S-project) | QIIME 2 processing, followed by diversity and taxonomic analysis in R | **Title:** [Is Intestinal Microbiota Fully Restored After Chickens Have Recovered from Coccidiosis?](https://www.mdpi.com/2076-0817/14/1/81)<br>**Journal:** *Pathogens* (2025)<br>**Authors:** **Jiaqing Guo**, Zijun Zhao, Chace Broadwater, Isabel Tobin, Jing Liu, Melanie Whitmore, Guolong Zhang |
+| [`nanopore-project`](nanopore-project) | Nanopore basecalling through taxonomic classification, followed by microbial community analysis in R | Manuscript in preparation |
+| [`16S-database`](16S-database) | In-house two-step taxonomic classification using a custom reference database followed by RDP classification | — |
+| [`metagenomic`](metagenomic) | Quality control, host read removal, assembly, gene prediction, and metagenomic binning | **Title:** [Dietary regulation on gut resistome linked with microbial amino acid metabolism in pigs](https://link.springer.com/article/10.1186/s42523-026-00542-z)<br>**Journal:** *Animal Microbiome* (2026)<br>**Authors:** Ziyu Liu, Chengming Meng, Junhua Shen, Huisong Wang, **Jiaqing Guo**, Jiangchao Zhao, Chunlong Mu, Weiyun Zhu |
+| [`RNA-seq`](RNA-seq) | RNA-seq alignment, gene quantification, and differential expression analysis in R | **Title:** [Deoxycholic Acid Mitigates Necrotic Enteritis Through Selective Inhibition of Pathobionts and Enrichment of Specific Lactic Acid Bacteria](https://www.mdpi.com/2076-0817/14/7/688)<br>**Journal:** *Pathogens* (2025)<br>**Authors:** Melanie A. Whitmore, **Jiaqing Guo**, Dohyung M. Kim, Jing Liu, Isabel Tobin, Guolong Zhang |
+| [`pythonNotes`](pythonNotes) | Python, pandas, and scikit-learn practice notebooks from coursework | — |
 
 ## 16S amplicon — `16S-project`
 
